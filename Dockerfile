@@ -1,4 +1,8 @@
-FROM node:18
+FROM node:18-slim
+
+ARG NODE_ENV_ARG
+
+ENV NODE_ENV=$NODE_ENV_ARG
 
 WORKDIR /app
 
